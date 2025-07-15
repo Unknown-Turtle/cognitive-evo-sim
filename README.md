@@ -92,10 +92,6 @@ cognitive-evo-sim/
 
 3.  **Install dependencies:**
     ```bash
-    pip install neat-python numpy matplotlib PyQt5 scikit-learn
-    ```
-    Alternatively, if a `requirements.txt` file is provided:
-    ```bash
     pip install -r requirements.txt
     ```
 
@@ -109,36 +105,6 @@ python main.py
 
 This will launch the PyQt5 GUI.
 
-## Using the Application
-
-1.  **Start Simulation:**
-    *   Click "Simulate Next Generation" to run one generation of evolution.
-    *   Statistics will update in the control panel.
-2.  **Visualize Agents:**
-    *   After a generation completes, click "Visualize Agents" to see a replay of selected agents moving through the maze.
-    *   Control the visualization speed using the "Speed" dropdown.
-3.  **Change Maze:**
-    *   Select a different maze type from the "Maze Type" dropdown. The simulation will adapt.
-4.  **Data Visualizations:**
-    *   Select a plot type from the "Data Visualization" dropdown.
-    *   Click "Generate" to create and save the plot to the `data/` subdirectories.
-    *   Available plots:
-        *   **Fitness History:** Tracks best, average, and worst fitness.
-        *   **Neural Network Visualization:** Shows the network structure of the current best agent.
-        *   **Network Complexity:** Tracks the average number of nodes and connections.
-        *   **Solution Diversity:** Visualizes the diversity of solutions using PCA on network weights.
-5.  **Checkpointing:**
-    *   **Save Checkpoint:** Manually save the current simulation state. You can provide a custom name.
-    *   **Load Checkpoint:** Load a previously saved simulation state.
-    *   Checkpoints are automatically saved every 5 generations by default.
-6.  **Save/Load Best Genome:**
-    *   "Save Best Genome": Saves the neural network of the current best agent to the `logs/` directory and also generates its network visualization.
-    *   "Load Genome": Loads a previously saved genome (primarily for inspection, does not restore full evolutionary state like checkpoints).
-7.  **Batch Simulate:**
-    *   Click "Batch Simulate" and enter the number of generations to run non-interactively.
-8.  **NEAT Configuration:**
-    *   The NEAT algorithm parameters are controlled by `configs/neat_config.txt`.
-    *   If this file is not present, it will be created from `configs/neat_config.template`. You can modify the template or the generated file to tune the evolution (e.g., population size, mutation rates, activation functions).
 
 ## Notes
 
