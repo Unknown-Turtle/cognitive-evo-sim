@@ -1,6 +1,6 @@
-# cognitive-evo-sim: NEAT Maze Evolution
+# cognitive-evo-sim
 
-cognitive-evo-sim is a Python-based simulation environment where agents controlled by evolving neural networks (using NEAT - NeuroEvolution of Augmenting Topologies) learn to solve mazes. The project includes a PyQt5 GUI for visualization, real-time simulation control, data logging, and various analytical plots.
+cognitive-evo-sim is a Python-based simulation environment where agents controlled by evolving neural networks (using NEAT - NeuroEvolution of Augmenting Topologies) learn to solve mazes. The project includes a PyQt5 GUI for visualization, real-time simulation control, data logging, and various analytical plots. The project is intended to be a framework for analysing AI perfomance for future IoT applications
 
 ## Features
 
